@@ -25,6 +25,7 @@ body {
 .calculator button {
   margin: 0.5em;
   padding: 0.5em 1em;
+  cursor: pointer;
 }
 
 #result {
@@ -32,8 +33,3 @@ body {
   font-size: 1.2em;
 }
 
-.calculator button {
-  margin: 0.5em;
-  padding: 0.5em 1em;
-  cursor: pointer;
-}
