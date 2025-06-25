@@ -5,7 +5,8 @@ body {
   height: 100vh;
   justify-content: center;
   align-items: center;
-  background: #f0f0f0; 
+  background: #f0f0fF;
+
 }
 
 .calculator {
@@ -15,7 +16,7 @@ body {
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   text-align: center;
 }
-
+    
 .calculator input {
   width: 4em;
   margin: 0.5em;
