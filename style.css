@@ -5,7 +5,11 @@ body {
   height: 100vh;
   justify-content: center;
   align-items: center;
+<<<<<<< HEAD
   background: #f0f0f0; /* revert bachground changes */
+=======
+  background: #f0f0f0; /* check color */
+>>>>>>> c6ff385 (Squash commits)
 }
 
 .calculator {
