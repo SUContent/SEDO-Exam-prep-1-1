@@ -28,4 +28,3 @@ function calculateAndDisplay(fn) {
   document.getElementById(`btn-${op}`)
     .addEventListener('click', () => calculateAndDisplay(window[op]));
 })
-
