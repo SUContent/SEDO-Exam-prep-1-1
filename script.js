@@ -1,10 +1,13 @@
+//add feature
 function add(a, b) {
   return a + b;
 }
-
+//substract feature
 function subtract(a, b) {
   return a - b;
 }
+
+//TODO new feature
 
 document.getElementById('btn-add').addEventListener('click', () => {
   const a = Number(document.getElementById('a').value);

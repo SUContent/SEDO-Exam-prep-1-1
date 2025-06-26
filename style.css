@@ -10,14 +10,14 @@ body {
 
 .calculator {
   background: white;
-  padding: 1em;
+  padding: 2em;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   text-align: center;
 }
 
 .calculator input {
-  width: 4em;
+  width: 5em;
   margin: 0.5em;
   text-align: right;
 }
@@ -36,4 +36,5 @@ body {
   margin: 0.5em;
   padding: 0.5em 1em;
   cursor: pointer;
+  background: #f0f0f0;
 }
