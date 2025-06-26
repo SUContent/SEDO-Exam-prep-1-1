@@ -5,7 +5,11 @@ function add(a, b) {
 function subtract(a, b) {
   return a - b;
 }
+
+let b = 8;
+
 const a = 5;
+
 
 function multiply(a, b) {
   return a * b;
@@ -16,7 +20,7 @@ function calculateAndDisplay(fn) {
   document.getElementById('result').textContent = fn(a, b);
 }
 
-=======
+
 const a = 5;
 
 
