@@ -17,13 +17,13 @@ body {
 }
 
 .calculator input {
-  width: 4em;
+  width: 4.1em;
   margin: 0.5em;
   text-align: right;
 }
 
 .calculator button {
-  margin: 0.5em;
+  margin: 0.6em;
   padding: 0.5em 1em;
 }
 
