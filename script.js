@@ -22,7 +22,7 @@ function calculateAndDisplay(fn) {
 
   const a = Number(rawA);
   const b = Number(rawB);
->>>>>>> ad55773 (Commit 2)
+
   document.getElementById('result').textContent = fn(a, b);
 }
 
