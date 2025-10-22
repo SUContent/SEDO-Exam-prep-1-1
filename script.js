@@ -5,7 +5,7 @@ function add(a, b) {
 function subtract(a, b) {
   return a - b;
 }
-
+// Change 1
 document.getElementById('btn-add').addEventListener('click', () => {
   const a = Number(document.getElementById('a').value);
   const b = Number(document.getElementById('b').value);
