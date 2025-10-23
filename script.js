@@ -22,3 +22,6 @@ document.getElementById("btn-subtract").addEventListener("click", () => {
 
 // change 3: Export functions for testing
 //Change 3
+
+// change 4: Export functions for testing
+// change 4
