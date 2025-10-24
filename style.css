@@ -22,15 +22,18 @@ body {
   text-align: right;
 }
 
+
 .calculator button {
   margin: 0.5em;
   padding: 0.5em 1em;
 }
 
+
 #result {
   margin-top: 1em;
   font-size: 1.2em;
 }
+
 
 .calculator button {
   margin: 0.5em;
