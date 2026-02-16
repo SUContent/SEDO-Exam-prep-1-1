@@ -21,6 +21,8 @@ function calculateAndDisplay(fn) {
 
   const a = Number(rawA);
   const b = Number(rawB);
+  const a = Number(document.getElementById('a').value);
+  const b = Number(document.getElementById('b').value);
   document.getElementById('result').textContent = fn(a, b);
 }
 
