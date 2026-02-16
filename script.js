@@ -12,11 +12,8 @@ document.getElementById('btn-add').addEventListener('click', () => {
   document.getElementById('result').textContent = add(a, b);
 });
 
-document.getElementById('btn-add')
-  .addEventListener('click', () => calculateAndDisplay(add));
-
-document.getElementById('btn-subtract')
-  .addEventListener('click', () => calculateAndDisplay(subtract));
-
-document.getElementById('btn-multiply')
-  .addEventListener('click', () => calculateAndDisplay(multiply));
+document.getElementById('btn-subtract').addEventListener('click', () => {
+  const a = Number(document.getElementById('a').value);
+  const b = Number(document.getElementById('b').value);
+  document.getElementById('result').textContent = subtract(a, b);
+});
