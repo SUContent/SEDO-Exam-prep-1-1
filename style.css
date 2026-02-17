@@ -1,11 +1,10 @@
-
 body {
   font-family: Arial, sans-serif;
   display: flex;
   height: 100vh;
   justify-content: center;
   align-items: center;
-  background: #f0f0f0;
+  background: #d9d1d1;
 }
 
 .calculator {
@@ -25,15 +24,10 @@ body {
 .calculator button {
   margin: 0.5em;
   padding: 0.5em 1em;
+  cursor: pointer;
 }
 
 #result {
   margin-top: 1em;
   font-size: 1.2em;
-}
-
-.calculator button {
-  margin: 0.5em;
-  padding: 0.5em 1em;
-  cursor: pointer;
 }
