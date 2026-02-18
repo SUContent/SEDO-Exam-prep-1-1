@@ -1,3 +1,4 @@
+// Add function
 function add(a, b) {
   return a + b;
 }
@@ -5,6 +6,14 @@ function add(a, b) {
 function subtract(a, b) {
   return a - b;
 }
+// Multiply function
+function multiply(a, b) {
+  return a * b;
+}
+
+function calculateAndDisplay(fn) {
+  const rawA = document.getElementById('a').value;
+  const rawB = document.getElementById('b').value;
 
 function multiply(a, b) {
   return a * b;
