@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.19.4.css">
 </head>
 <body>
+
   <div id="qunit"></div>
   <div id="qunit-fixture"></div>
 
@@ -23,6 +24,13 @@
       assert.equal(subtract(5, 3), 2, '5 - 3 = 2');
       assert.equal(subtract(0, 4), -4, '0 - 4 = -4');
     });
+
+    QUnit.test('multiply()', assert => {
+      assert.equal(multiply(2, 3), 6, '2 × 3 = 6');
+      assert.equal(multiply(-2, 3), -6, '-2 × 3 = -6');
+      assert.equal(multiply(2.5, 2), 5, '2.5 × 2 = 5');
+    });
   </script>
+  
 </body>
 </html>
