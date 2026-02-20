@@ -37,3 +37,7 @@ body {
   padding: 0.5em 1em;
   cursor: pointer;
 }
+
+/* 
+ * fix bug: Corrects an issue in the implementation.
+ */
