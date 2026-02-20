@@ -11,20 +11,24 @@ function multiply(a, b) {
 }
 
 function calculateAndDisplay(fn) {
-  const rawA = document.getElementId('a').value;
-  const rawB = document.getElementId('b').value;
+  const rawA = document.getElementById('a').value;
+  const rawB = document.getElementById('b').value;
 
   if (rawA === '' || rawB === '') {
-    document.getElementId('result').textContent = 'Please fill both inputs';
+    document.getElementById('result').textContent = 'Please fill both inputs';
     return;
   }
 
   const a = Number(rawA);
   const b = Number(rawB);
-  document.getElementId('result').textContent = fn(a, b);
+  document.getElementById('result').textContent = fn(a, b);
 }
 
-['add', 'subtract', 'multiply'].forEach(op => {
-  document.getElementId(`btn-${op}`)
-    .addEventListener('click', () => calculateAndDisplay(window[op]));
-});
+document.getElementById('btn-add')
+  .addEventListener('click', () => calculateAndDisplay(add));
+
+document.getElementById('btn-subtract')
+  .addEventListener('click', () => calculateAndDisplay(subtract));
+
+document.getElementById('btn-multiply')
+  .addEventListener('click', () => calculateAndDisplay(multiply));
