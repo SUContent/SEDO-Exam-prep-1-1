@@ -6,6 +6,19 @@ function add(a, b) {
 function subtract(a, b) {
   return a - b;
 }
+// Multiply function
+function multiply(a, b) {
+  return a * b;
+}
+// Function calculate and display
+function calculateAndDisplay(fn) {
+  const rawA = document.getElementById('a').value;
+  const rawB = document.getElementById('b').value;
+
+  if (rawA === '' || rawB === '') {
+    document.getElementById('result').textContent = 'Please fill both inputs';
+    return;
+  }
 
 function multiply(a, b) {
   return a * b;
