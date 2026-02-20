@@ -31,8 +31,6 @@ body {
   margin-top: 1em;
   font-size: 1.2em;
 }
-<<<<<<< HEAD
-=======
 
 .calculator button {
   margin: 0.5em;
@@ -43,4 +41,3 @@ body {
 /* 
  * fix bug: Corrects an issue in the implementation.
  */
->>>>>>> f8b38c8 (fix bug substract empty)
