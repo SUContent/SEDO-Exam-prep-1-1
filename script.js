@@ -3,12 +3,17 @@ function add(a, b) {
 }
 
 function subtract(a, b) {
+  if (input === '')
+    input = 0;
   return a - b;
 }
 function multiply(a, b) {
   return a * b;
 }
 function divide(a, b) {
+  if (b === 0) {
+    return "Error! Division by zero is not allowed.";
+  }
   return a / b;
 }
 
