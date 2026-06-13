@@ -7,7 +7,13 @@ function divide(a, b) {
   if (b === 0) return "Error! Division by zero is not allowed.";
   return a / b;
 }
-
+//Data input
+function getInputs() {
+  return {
+    a: Number(document.getElementById('a').value),
+    b: Number(document.getElementById('b').value)
+  };
+}
 document.getElementById('btn-add').addEventListener('click', () => {
   const a = Number(document.getElementById('a').value);
   const b = Number(document.getElementById('b').value);
