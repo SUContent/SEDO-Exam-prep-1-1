@@ -3,8 +3,7 @@ function add(a, b) {
 }
 
 function subtract(a, b) {
-  if (input === '')
-    input = 0;
+
   return a - b;
 }
 function multiply(a, b) {
