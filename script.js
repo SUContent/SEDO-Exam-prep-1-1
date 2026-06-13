@@ -14,26 +14,7 @@ function getInputs() {
     b: Number(document.getElementById('b').value)
   };
 }
-document.getElementById('btn-add').addEventListener('click', () => {
-  const a = Number(document.getElementById('a').value);
-  const b = Number(document.getElementById('b').value);
-  document.getElementById('result').textContent = add(a, b);
-});
-
-document.getElementById('btn-subtract').addEventListener('click', () => {
-  const a = Number(document.getElementById('a').value);
-  const b = Number(document.getElementById('b').value);
-  document.getElementById('result').textContent = subtract(a, b);
-});
-//Multiply added
-document.getElementById('btn-multiply').addEventListener('click', () => {
-  const a = Number(document.getElementById('a').value);
-  const b = Number(document.getElementById('b').value);
-  document.getElementById('result').textContent = multiply(a, b);
-});
-//Divide added
-document.getElementById('btn-divide').addEventListener('click', () => {
-  const a = Number(document.getElementById('a').value);
-  const b = Number(document.getElementById('b').value);
-  document.getElementById('result').textContent = divide(a, b);
-});
+document.getElementById('btn-add').addEventListener('click', () => calculate(add));
+document.getElementById('btn-subtract').addEventListener('click', () => calculate(subtract));
+document.getElementById('btn-multiply').addEventListener('click', () => calculate(multiply));
+document.getElementById('btn-divide').addEventListener('click', () => calculate(divide));
