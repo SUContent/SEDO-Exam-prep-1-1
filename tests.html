@@ -9,6 +9,8 @@
 <body>
   <div id="qunit"></div>
   <div id="qunit-fixture">
+    <input id="a" type="text" title="Input Number A">
+    <input id="b" type="text" title="Input Number B">
     <input id="a" type="text" title="Input A">
     <input id="b" type="text" title="Input B">
     <button id="btn-subtract">Subtract</button>
@@ -35,6 +37,10 @@
     });
 
     QUnit.test('subtract with empty inputs', assert => {
+
+      // Re-initialize event handlers for dynamically created QUnit fixture elements
+      init();
+
       // 1. Извикваме init() ТУК, за да закачим събитията на новосъздадените от QUnit бутони
       init();
       
@@ -51,4 +57,3 @@
     });
   </script>
 </body>
-</html>

@@ -25,6 +25,15 @@ function calculateAndDisplay(fn) {
   document.getElementById('result').textContent = fn(a, b);
 }
 
+function init() {
+  ['add', 'subtract', 'multiply'].forEach(op => {
+    document.getElementById(`btn-${op}`)
+      ?.addEventListener('click', () => calculateAndDisplay(window[op]));
+  });
+}
+
+// Run initialization for production environment
+init();
 // Wrap event listeners in a function so we can re-initialize them in tests if needed
 function init() {
   document.getElementById('btn-add')
