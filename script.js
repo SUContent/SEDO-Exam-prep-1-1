@@ -6,14 +6,16 @@ function subtract(a, b) {
   return a - b;
 }
 
-document.getElementById('btn-add').addEventListener('click', () => {
-  const a = Number(document.getElementById('a').value);
-  const b = Number(document.getElementById('b').value);
-  document.getElementById('result').textContent = add(a, b);
-});
+function multiply(a, b) {
+  return a * b;
+}
 
-document.getElementById('btn-subtract').addEventListener('click', () => {
-  const a = Number(document.getElementById('a').value);
-  const b = Number(document.getElementById('b').value);
-  document.getElementById('result').textContent = subtract(a, b);
-});
+function calculateAndDisplay(fn) {
+  const rawA = document.getElementById('a').value;
+  const rawB = document.getElementById('b').value;
+
+// Attach all buttons dynamically using a loop to reduce code duplication   
+['add', 'subtract', 'multiply'].forEach(op => {
+  document.getElementById(`btn-${op}`)
+    .addEventListener('click', () => calculateAndDisplay(window[op]));
+});   
