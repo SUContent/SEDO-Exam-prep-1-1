@@ -10,17 +10,26 @@ function multiply(a, b) {
   return a * b;
 }
 
-document.getElementById('btn-add').addEventListener('click', () => {
-  const a = Number(document.getElementById('a').value);
-  const b = Number(document.getElementById('b').value);
-  document.getElementById('result').textContent = add(a, b);
-});
+function calculateAndDisplay(fn) {
+  const rawA = document.getElementById('a').value;
+  const rawB = document.getElementById('b').value;
+  // Validate that both inputs are filled before calculating
+  if (rawA === '' || rawB === '') {
+    document.getElementById('result').textContent = 'Please fill both inputs';
+    return;
+  }
 
-document.getElementById('btn-subtract').addEventListener('click', () => {
-  const a = Number(document.getElementById('a').value);
-  const b = Number(document.getElementById('b').value);
-  document.getElementById('result').textContent = subtract(a, b);
-});
+  const a = Number(rawA);
+  const b = Number(rawB);
+  document.getElementById('result').textContent = fn(a, b);
+}
+
+document.getElementById('btn-add')
+  .addEventListener('click', () => calculateAndDisplay(add));
+
+document.getElementById('btn-subtract')
+  .addEventListener('click', () => calculateAndDisplay(subtract));
 
 document.getElementById('btn-multiply')
   .addEventListener('click', () => calculateAndDisplay(multiply));
+  
