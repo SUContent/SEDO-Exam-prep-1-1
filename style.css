@@ -37,3 +37,12 @@ body {
   padding: 0.5em 1em;
   cursor: pointer;
 }
+
+#btn-multiply {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 0.5em 1em;
+  border-radius: 4px;
+  cursor: pointer;
+}
