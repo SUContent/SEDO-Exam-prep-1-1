@@ -1,4 +1,3 @@
-// Add comment for input validation
 function add(a, b) {
   return a + b;
 }
@@ -15,6 +14,7 @@ function calculateAndDisplay(fn) {
   const rawA = document.getElementById('a').value;
   const rawB = document.getElementById('b').value;
 
+  // Валидация за празни полета (от bugfix)
   if (rawA === '' || rawB === '') {
     document.getElementById('result').textContent = 'Please fill both inputs';
     return;
@@ -25,11 +25,8 @@ function calculateAndDisplay(fn) {
   document.getElementById('result').textContent = fn(a, b);
 }
 
-document.getElementById('btn-add')
-  .addEventListener('click', () => calculateAndDisplay(add));
-
-document.getElementById('btn-subtract')
-  .addEventListener('click', () => calculateAndDisplay(subtract));
-
-document.getElementById('btn-multiply')
-  .addEventListener('click', () => calculateAndDisplay(multiply));
+// Рефакторирани event listeners (от chore)
+['add', 'subtract', 'multiply'].forEach(op => {
+  document.getElementById(`btn-${op}`)
+    .addEventListener('click', () => calculateAndDisplay(window[op]));
+});
