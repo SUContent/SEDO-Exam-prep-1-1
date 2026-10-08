@@ -1,19 +1,34 @@
-function add(a, b) {
-  return a + b;
-}
+// Base functionality: add task, toggle complete, delete on double-click
 
-function subtract(a, b) {
-  return a - b;
-}
+const input = document.getElementById('task-input');
+const addBtn = document.getElementById('add-btn');
+const list = document.getElementById('task-list');
 
-document.getElementById('btn-add').addEventListener('click', () => {
-  const a = Number(document.getElementById('a').value);
-  const b = Number(document.getElementById('b').value);
-  document.getElementById('result').textContent = add(a, b);
+addBtn.addEventListener('click', () => {
+  const text = input.value;
+  const li = document.createElement('li');
+  li.textContent = text;
+  list.appendChild(li);
+  input.value = '';
 });
 
-document.getElementById('btn-subtract').addEventListener('click', () => {
-  const a = Number(document.getElementById('a').value);
-  const b = Number(document.getElementById('b').value);
-  document.getElementById('result').textContent = subtract(a, b);
+// Toggle complete
+list.addEventListener('click', e => {
+  if (e.target.tagName === 'LI') {
+    e.target.classList.toggle('completed');
+  }
+});
+
+// Delete on double-click
+list.addEventListener('dblclick', e => {
+  if (e.target.tagName === 'LI') {
+    e.target.remove();
+  }
+});
+
+// Clear all completed tasks
+const clearBtn = document.getElementById('clear-completed-btn');
+clearBtn.addEventListener('click', () => {
+  document.querySelectorAll('#task-list li.completed')
+    .forEach(li => li.remove());
 });

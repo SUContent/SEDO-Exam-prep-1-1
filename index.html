@@ -2,18 +2,18 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Calculator</title>
+  <title>Simple Todo App</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.19.4.css">
 </head>
 <body>
-  <div class="calculator">
-    <input id="a" type="number" step="any" placeholder="">
-    <input id="b" type="number" step="any" placeholder="">
-    <button id="btn-add">Add</button>
-    <button id="btn-subtract">Subtract</button>
-    <div id="result"></div>
+  <div class="todo-app">
+    <h1>Todo List</h1>
+    <input id="task-input" type="text" placeholder="Enter new task">
+    <button id="add-btn">Add</button>
+    <button id="clear-completed-btn">Clear Completed</button>
+    <ul id="task-list"></ul>
   </div>
+  <div></div>
   <script src="script.js"></script>
 </body>
 </html>
