@@ -1,0 +1,12 @@
+{
+  "name": "1-multiply-button",
+  "version": "1.0.0",
+  "main": "script.js",
+  "scripts": {
+    "test": "start \"\" tests.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
