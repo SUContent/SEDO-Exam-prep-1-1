@@ -28,3 +28,11 @@ function calculateAndDisplay(fn) {
   document.getElementById(`btn-${op}`)
     .addEventListener('click', () => calculateAndDisplay(window[op]));
 });
+document.getElementById('btn-add')
+  .addEventListener('click', () => calculateAndDisplay(add));
+
+document.getElementById('btn-subtract')
+  .addEventListener('click', () => calculateAndDisplay(subtract));
+
+document.getElementById('btn-multiply')
+  .addEventListener('click', () => calculateAndDisplay(multiply));
